@@ -1,0 +1,13 @@
+// Form Border
+$wvu-form-border-color: $wvu-base-border-color !default;
+$wvu-form-border-color-hover: $wvu-base-border-color !default;
+$wvu-form-border-color-focus: $wvu-base-accent-color !default;
+$wvu-form-border-radius: $wvu-base-border-radius;
+
+// Form Box Shadow
+$wvu-form-box-shadow: inset 0 1px 3px $wvu-base-shadow-color !default;
+$wvu-form-box-shadow-focus: $wvu-form-box-shadow, 0 0 5px rgba($wvu-form-border-color-focus, 0.7) !default;
+
+// Form Font
+$wvu-form-font-size: $wvu-typography-font-size !default;
+$wvu-form-font-family: $wvu-base-font-family !default;

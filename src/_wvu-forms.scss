@@ -1,0 +1,95 @@
+@import "wvu-forms-variables";
+
+.wvu-form {
+  fieldset {
+    background: $wvu-lightest-grey;
+    border: $wvu-base-border;
+    margin: 0 0 ($wvu-base-spacing / 2) 0;
+    padding: $wvu-base-spacing;
+  }
+
+  input,
+  label,
+  select {
+    display: block;
+    font-family: $wvu-form-font-family;
+    font-size: $wvu-form-font-size;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: $wvu-base-spacing / 4;
+
+    &.required:after {
+      content: "*";
+    }
+
+    abbr {
+      display: none;
+    }
+  }
+
+  textarea,
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="url"],
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  select[multiple=multiple] {
+    // TODO: I dont think you need box sizing here
+    box-sizing: border-box;
+    background-color: $wvu-white;
+    border-radius: $wvu-form-border-radius;
+    border: 1px solid $wvu-form-border-color;
+    box-shadow: $wvu-form-box-shadow;
+    font-family: $wvu-form-font-family;
+    font-size: $wvu-form-font-size;
+    margin-bottom: $wvu-base-spacing / 2;
+    padding: ($wvu-base-spacing / 3) ($wvu-base-spacing / 3);
+    width: 100%;
+
+    &:hover {
+      border-color: $wvu-form-border-color-hover;
+    }
+
+    &:focus {
+      border-color: $wvu-form-border-color-focus;
+      box-shadow: $wvu-form-box-shadow-focus;
+      outline: none;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  //input[type="search"] {
+  //  @include appearance(none);
+  //}
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline;
+    margin-right: $wvu-base-spacing / 4;
+  }
+
+  input[type="file"] {
+    padding-bottom: $wvu-base-spacing / 2;
+    width: 100%;
+  }
+
+  select {
+    margin-bottom: $wvu-base-spacing;
+    max-width: 100%;
+    width: auto;
+  }
+}

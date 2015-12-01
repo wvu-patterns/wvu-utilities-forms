@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WVU Pattern Library - Form Utility Test</title>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      body {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WVU Form Tests</h1>
+    <form class="wvu-form">
+
+      {{> form-elements }}
+
+      <h2>Fieldset</h2>
+      <fieldset>
+        This is a field set
+      </fieldset>
+
+      <h3>Fieldset with all Form Elements</h3>
+      <fieldset>
+        {{> form-elements }}
+      </fieldset>
+
+    </form>
+  </body>
+</html>
