@@ -1,33 +1,14 @@
 // Default Variable Overrides
 // =================================================
 
-$wvu-masthead-background: 'blue';
 
-
-// 3rd Party Dependencies
+// Include Manifest
 // =================================================
+@import './src/scss/manifest';
 
-// Normalize
-@import "./bower_components/normalize-scss/normalize.scss";
 
-// Bourbon & Neat
-@import "./bower_components/bourbon/app/assets/stylesheets/bourbon";
-@import "./bower_components/neat/app/assets/stylesheets/neat";
-
-// WVU Dependency Utilities
+// Test Styles
 // =================================================
-
-// wvu-utilities-variables
-@import "./bower_components/wvu-utilities-variables/src/scss/wvu-variables-color";
-@import "./bower_components/wvu-utilities-variables/src/scss/wvu-variables-base";
-@import "./bower_components/wvu-utilities-variables/src/scss/wvu-variables-mediaquery";
-@import "./bower_components/wvu-utilities-variables/src/scss/wvu-variables-images";
-@import "./bower_components/wvu-utilities-variables/src/scss/wvu-variables-overrides";
-
-// wvu-utilities-typography
-@import "./bower_components/wvu-utilities-typography/src/scss/wvu-typography";
-
-
-// WVU Form Utility
-// =================================================
-@import "./src/scss/wvu-forms"
+.container {
+  @include outer-container();
+}
