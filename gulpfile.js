@@ -7,6 +7,7 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
     handlebars = require('gulp-compile-handlebars'),
+    todo = require('gulp-todo'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
@@ -21,6 +22,21 @@ var gulp = require('gulp'),
       logSnippet: false
     });
   });
+
+gulp.task('todo', function(){
+  return gulp.src([
+    './**/*.scss',
+    '!./bower_components/**/*.scss',
+    './**/*.html',
+    '!./bower_components/**/*.html',
+    './**/*.hbs',
+    '!./bower_components/**/*.hbs',
+    './**/*.haml',
+    '!./bower_components/**/*.haml'
+  ])
+  .pipe(todo())
+  .pipe(gulp.dest('./'));
+});
 
   gulp.task('compile-scss', function(){
     return gulp.src([
