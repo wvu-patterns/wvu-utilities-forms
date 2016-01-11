@@ -30,7 +30,7 @@
     "wvu-utilities-typography" : "1.0.0"
   },
   "devDependencies": {
-    "normalize-scss": "~3.0.3",
+    "normalize.scss": "~4.0.3",
     "neat" : "1.7.2",
     "wvu-utilities-colors" : "1.0.0"
   }
